@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+.navcontainer{
+
+width: 100vw;
+background-color: #0a0a0b;
+background-image: linear-gradient(160deg,#13131b 0%, #230d9f 100%);
+min-height: 100px;
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+
+
+}
+nav{
+    width: 100%;
+}
+#navlist{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 98%;
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:space-between;
+    align-content: center;
+    
+    
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(8, 8, 80, 0.5),
+    rgba(77, 65, 77, 0.5)
+  ), url("background.png");
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+
+}
+#navlogo{
+    font-size: 2rem;
+    color:azure;
+    font-weight:50px ;
+    text-shadow: 5px 5px 5px gray;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navitems{
+    display: flex;
+    gap: 40px;
+}
+.footerbox{
+    background-color: #111112;
+    background-image: linear-gradient(160deg,#19191b 0%, #3412cf 100%);
+    color: azure;
+    text-align: center;
+    font-size: 30px;
+
+
+}
+
+.contentbox{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    
+
+    
+}
+.item{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.rightbox img{
+    height: 400px;
+    border-radius: 20px;
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    padding-right: 20px;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.leftbox h3{
+    font-size: 1.2rem;
+}
+.ingbox{
+    font-size: 1rem;
+    font-style:oblique;
+    line-height: 1.4rem;
+    font-weight:dark;
+
+}
+.makebox{
+    font-size: 1rem;
+    font-style:oblique;
+    line-height: 1.4rem;
+    font-weight: dark;
+}
+.section{
+    box-shadow: 3px 3px 20px rgb(16, 3, 53);
+    background-color: #bda9f0;
+    background-image: linear-gradient(98deg,#8f95db 0,#f6f5e8 100% );
+
+}
+.quote{
+    text-align: center;
+    font-family:cursive;
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-weight: 10rem;
+    color: rgb(210, 205, 205);
+
+}
+.bold{
+    color: rgb(219, 229, 233);
+    font-size: 100px;
+}
+    </style>
+</head>
+<body>
+ <div class="container">
+    <header>
+        <div class="navcontainer">
+            <nav>
+                <ul id="navlist">
+                    <li>
+                        <p id="navlogo">Recipebox</p>
+                    </li>
+                    <li> 
+                       <div id="navitems">
+                       <a href="#">Home</a>
+                       <a href="#">About</a>
+                       <a href="#">Contact</a>
+                       </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="quote">
+            <p>Learn <b class="bold">Recipe</b>,Make your day some more <b class="bold">special...</b></p>
+        </section>
+        <div class="contentbox">
+            <section class="section">
+                <div class="item">
+                    <div class="leftbox">
+                        <h2>Gulab Jamun</h2>
+                        <div>
+                            <h3>Ingredients</h3>
+                        <ul class="ingbox">
+                            <li>Sugar</li>
+                            <li>gulamjamun mix powder</li>
+                            <li>oil</li>
+                        </ul>
+                        </div>
+                        <div>
+                            <h3>Making Process</h3>
+                        <ol class="makebox">
+                            <li> Prepare the dough. </li>
+                            <li>Let the dough rest. </li>
+                            <li>Prepare the sugar syrup.</li>
+                            <li>the jamuns.</li>
+                            <li>Step 5: Fry the jamuns.</li>
+                            <li>Add jamuns to the sugar syrup.</li>
+                            <li>Garnish.</li>
+                        </ol>
+                        </div>
+
+                    </div>
+                    <div class="rightbox">
+
+                        <img src="gulabiamun.jpg" alt="gulabiamun">
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="item">
+                    <div class="leftbox">
+                        <h2>Chicken Biryani</h2>
+                        <div class="recipebox">
+                            <h3>Ingredients</h3>
+                        <ul class="ingbox">
+                            <li>Chicken</li>
+                            <li>Basmati rice</li>
+                            <li>oil,masalas,...etc</li>
+                        </ul>
+                        </div>
+                        <div>
+                            <h3>Making Process</h3>
+                        <ol class="makebox">
+                            <li> This recipe needs half kg chicken (1.1 lbs.). <br>Make few slits on all the chicken pieces <br> and add to a large bowl. ...</li>
+                            <li>Mix everything well and marinate the chicken. <br>Cover and set this aside for 1 hour. ...</li>
+                            <li>Meanwhile add 2 cups basmati rice to a large pot <br>and rinse it at least thrice.</li>
+                        
+                        </ol>
+                        </div>
+
+                    </div>
+                    <div class="rightbox">
+
+                        <img src="biryan.jpg" alt="beryani"  height="330px">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footerbox">
+            <p> copyright &copy; Recipebox Pvt Ltd all Rights are Reserved</p>
+        </div>
+    </footer>
+ </div>
+</body>
+</html>
